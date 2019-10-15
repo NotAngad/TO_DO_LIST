@@ -1,0 +1,95 @@
+/* 
+Title : To-Do List.css
+Author : Angad Sudesh Srivastav
+Time : 15th October 2019 (4:31 pm)
+Objective : To make a css file so the page for our todo app looks good. Our app can add new items. Remove old ones and even strik through them if the user wishes to keep them.  
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    width: 360px;
+    margin: 100px auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    background-color: greenyellow;
+    color: #3300cd;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    background-color: fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+li:nth-child(2n){
+    background-color: #f7f7f7;
+}
+
+input{
+    font-size: 18px;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #3300cd;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus{
+    background-color: #fff;
+    border: 3px solid greenyellow;
+}
+
+.fa-plus{
+    float: right;
+}
+
+span{
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 0px;
+    height: 40px;
+    margin-right: 20px;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span{
+    width: 40px;
+    opacity: 1.0;
+}
+@media (max-width: 768px){
+    .container {
+        width: 300px;
+        margin: 100px auto;
+        background-color: #f7f7f7;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    }
+   }
