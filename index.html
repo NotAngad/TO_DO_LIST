@@ -1,0 +1,50 @@
+<!-- 
+Title : To-Do List.html
+Author : Angad Sudesh Srivastav
+Time : 15th October 2019 (4:31 pm)
+Objective : To make a html file so the page for our todo app has a structure which we can stylize and add features to. Our app can add new items. Remove old ones and even strik through them if the user wishes to keep them.  
+ -->
+
+ <!-- Document Declaration -->
+<!DOCTYPE html>
+
+<!-- Language -->
+<html lang="en">
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Jquery -->
+    <script type="text/javascript" src="js/lib/jquery-3.4.1.js"></script>
+    
+    <!-- Title of the page -->
+    <title>To Do List</title>
+</head>
+
+<!-- Body of the page -->
+<body>
+
+    <!-- List Containing Div -->
+    <div class="container">
+        <h1>To-Do List <i class="fas fa-plus"></i></h1>
+        <input type="text" placeholder="Add New Todo Here">
+        <ul>
+        </ul>
+    </div>
+
+    <!-- Main Javascript file -->
+    <script src="js/todos.js"></script>
+</body>
+</html>
